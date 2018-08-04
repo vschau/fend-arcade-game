@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*
+* Styles for the character selection menu
+*/
+.side-menu {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.char-selection {
+    margin: 0 0 0 50px;
+}
+
+.player {
+    width: 60px;
+    height: 100px;
+}
+
+/*
+* Styles for the canvas area
+*/
+.play-area {
+    flex-grow: 2;
+    position: relative;
+}
+
+.canvas {
+    width: 505px;
+    height: 606px;
+}
+
+/*
+* Styles for the top menu
+*/
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: 5px auto auto auto;
+    width: 505px;
+}
+
+.level-menu {
+    margin: auto auto 20px 7px;
+    flex-basis: 25%;
+}
+
+.point-menu {
+    margin: auto auto 20px 7px;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.heart-wrapper {
+    margin: 0 7px 5px 0;
+    height: 54px;
+    flex-basis: 55%;
+    text-align: right;
+}
+
+.heart {
+    display: inline-block;
+    visibility: hidden;
+}
+
+.heart-img {
+    width: 30px;
+    height: 50px;
+}
+
+.show {
+    visibility: visible;
+}
+
+/*
+* Styles for the level modal
+*/
+.modal-wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    top: 280px;
+    left: 150px;
+    text-align: center;
+    -webkit-transform: translate(0, -400px);
+    transform: translate(0, -400px);
+}
+
+.modal-wrapper.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-out;
+}
+
+.modal {
+    margin: auto;
+    padding: 10px 0 10px 0;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}

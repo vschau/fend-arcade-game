@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="flexbox">
+            <section class="side-menu">
+                <ul class="char-selection">
+                    <li><img class="player" src="images/char-boy.png" alt="Boy icon"></li>
+                    <li><img class="player" src="images/char-cat-girl.png" alt="Girl icon"></li>
+                    <li><img class="player" src="images/char-horn-girl.png" alt="Horn girl icon"></li>
+                    <li><img class="player" src="images/char-pink-girl.png" alt="Pink girl icon"></li>
+                    <li><img class="player" src="images/char-princess-girl.png" alt="Princess icon"></li>
+                </ul>
+            </section>
+            <section class="play-area">
+                <div class="top-menu">
+                    <div class="level-menu">
+                        LEVEL:<span class="current-level">1</span>
+                    </div>
+                    <div class="point-menu">
+                        <span class="point">0</span> POINTS
+                    </div>
+                    <ul class="heart-wrapper">
+                        <li class="heart show"><img class="heart-img" src="images/Heart.png" alt="Heart icon"></li>
+                        <li class="heart show"><img class="heart-img" src="images/Heart.png" alt="Heart icon"></li>
+                        <li class="heart show"><img class="heart-img" src="images/Heart.png" alt="Heart icon"></li>
+                        <li class="heart show"><img class="heart-img" src="images/Heart.png" alt="Heart icon"></li>
+                        <li class="heart show"><img class="heart-img" src="images/Heart.png" alt="Heart icon"></li>
+                    </ul>
+                </div>
+                <canvas class="canvas" width="505" height="606"></canvas>
+                <div class="modal-wrapper">
+                    <p class="modal">LEVEL <span class="modal-level">1</span> CLEARED!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
